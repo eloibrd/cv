@@ -1,0 +1,58 @@
+% !TEX root = Simple-CV.tex
+%-------------------------------------------------------------------------------------------------------
+% Packages
+%-------------------------------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[colorlinks=true, urlcolor=ColorTwo]{hyperref}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{sectsty}
+\usepackage{multicol}
+\usepackage{adjustbox}
+\usepackage{titlesec}
+\usepackage{worldflags}
+%-------------------------------------------------------------------------------------------------------
+% Layout
+%-------------------------------------------------------------------------------------------------------
+\pagenumbering{gobble}
+\renewcommand{\baselinestretch}{1.5} 
+\setlength{\parindent}{0pt}
+\titlespacing*{\section} {0pt}{2ex}{1ex}
+\setlength{\multicolsep}{0.0pt plus 0.0pt minus 0.0pt}
+
+%
+% Color theme
+%
+\definecolor{ColorOne}{RGB}{41, 148, 29} 	% Green
+\definecolor{ColorTwo}{RGB}{99,52,11} 	% Brown
+\definecolor{ColorThree}{RGB}{209,175,118} 	% Beige
+
+\sectionfont{\color{ColorOne}}
+
+%
+% Vertical line
+%
+\newcommand{\MyVerticalRule}{%
+	\textcolor{ColorOne}{\rule{1pt}{\textheight}}
+}
+
+%
+% Format hyperrefs
+%
+\newcommand{\myhref}[2]{%
+\href{#1}{\textcolor{ColorThree}{#2}}
+}
+
+%
+% Format skill bullets
+%
+\newcommand{\SkillBull}[1]{%
+\textcolor{ColorThree}{#1}
+}
+

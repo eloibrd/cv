@@ -1,0 +1,31 @@
+name: Deploy PDF
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Build
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: |
+            cv-en.tex
+            cv-fr.tex
+      - name: Copy
+        run: |
+          mkdir out
+          cp ./cv-en.pdf ./out/cv-en.pdf
+          cp ./cv-fr.pdf ./out/cv-fr.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cv
+          path: |
+            out/cv-en.pdf
+            out/cv-fr.pdf

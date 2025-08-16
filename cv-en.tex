@@ -1,0 +1,236 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[vmargin=1.5cm, hmargin=1.5cm]{geometry}
+\usepackage[french]{babel}
+\input{setup}
+%-------------------------------------------------------------------------------------------------------
+
+\begin{document}
+\thispagestyle{empty}
+
+%-------------------------------------------------------------------------------------------------------
+% Left column
+%-------------------------------------------------------------------------------------------------------
+\begin{adjustbox}{valign=t}
+\begin{minipage}{0.3\textwidth}
+%----------------------------------------------------
+
+\begin{center}
+\begin{tikzpicture}
+	\clip (0,0) circle (2cm) node {\includegraphics[width=4cm]{photo.jpg}};
+\end{tikzpicture}
+
+\vskip12pt
+
+%----------------------------------------------------
+{\LARGE \bfseries \textcolor{ColorOne}{Eloi BERNARD}}
+{\large \bfseries \textcolor{ColorOne}{Software engineer}}
+
+\vskip6pt
+
+\end{center}
+
+\textcolor{ColorTwo}{\faBirthdayCake} Born 30/12/1999\\
+\textcolor{ColorTwo}{\faLocationArrow} Lyon -- FRANCE\\
+\textcolor{ColorTwo}{\faCar} Licence B
+
+\textcolor{ColorTwo}{\faPhone} 
+\myhref{tel:0647774950}{06.47.77.49.50}
+
+\textcolor{ColorTwo}{\faEnvelopeO} 
+\myhref{mailto:eloi0bernard@gmail.com}{eloi0bernard@gmail.com}
+
+% \textcolor{ColorTwo}{\faGithubSquare} 
+% \myhref{https://github.com/eloibrd}{github.com/eloibrd}
+
+\textcolor{ColorTwo}{\faLinkedinSquare} 
+\myhref{https://www.linkedin.com/in/eloi-bernard}{linkedin.com/in/eloi-bernard}
+
+%----------------------------------------------------
+\section*{Languages}
+\raggedright
+\worldflag[length=18pt,width=9pt]{FR} French: mother tongue\\
+\worldflag[length=18pt,width=9pt]{GB} English: fluent (CERL C2)
+
+%----------------------------------------------------
+\section*{Education}
+\begin{description}
+\raggedright
+\item [\normalfont \textcolor{ColorTwo}{2023.}] \textbf{\textcolor{ColorOne}{IT and Networks Engineer}}\\
+
+\scriptsize
+CPE Lyon -- Lyon -- FRANCE
+\normalsize
+
+\item [\normalfont \textcolor{ColorTwo}{2020.}] \textbf{\textcolor{ColorOne}{Computer Science Degree}}\\
+
+\scriptsize
+IUT2 UGA -- Grenoble -- FRANCE
+\normalsize
+
+\item [\normalfont \textcolor{ColorTwo}{2017.}] \textbf{\textcolor{ColorOne}{Scientific baccalaureate - Engineering sciences}}\\ 
+
+\scriptsize
+Ferdinand Buisson High School -- Voiron -- FRANCE
+\normalsize
+\end{description}
+
+%----------------------------------------------------
+\section*{Hobbies}
+\raggedright
+\textcolor{ColorOne}{$\circ$} Sports practice\\
+\textcolor{ColorOne}{$\circ$} Video games\\
+\textcolor{ColorOne}{$\circ$} E-sport
+
+
+\end{minipage}
+\end{adjustbox}
+%
+%
+%-------------------------------------------------------------------------------------------------------
+% Vertical rule
+%-------------------------------------------------------------------------------------------------------
+%
+\hfill
+\begin{adjustbox}{valign=t}
+\begin{minipage}{0.05\textwidth} % Adapt width to your convenience
+\MyVerticalRule  % See MySetup.tex file
+\end{minipage}
+\end{adjustbox}
+\hfill
+%
+%-------------------------------------------------------------------------------------------------------
+% Main column
+%-------------------------------------------------------------------------------------------------------
+\begin{adjustbox}{valign=t}
+\begin{minipage}{0.6\textwidth} % Adapt width to your convienience
+
+%----------------------------------------------------
+\section*{Significant Experience}
+
+\begin{description}
+\raggedright
+
+\item[\normalfont \textcolor{ColorTwo}{09/2023 -- Current}] \textbf{\textcolor{ColorOne}{Consultant - Computer Science Engineer}}\\
+
+\footnotesize
+Solutec -- Lyon -- FRANCE
+
+\small
+\textcolor{ColorTwo}{Mission in a big retail firm}
+
+\footnotesize
+DevOps. Industrialization of the delivery process of a redesign of the point-of-sale system application. Ansible playbooks creation, CI/CD workflow enhancement, containerization, system administration.\\
+
+\scriptsize
+\textcolor{ColorThree}{Tools:} Docker; Kubernetes; Gitlab CI; Python; Ansible; Shell; Git\\
+
+\small
+\textcolor{ColorTwo}{Mission in a package delivery firm}
+
+\footnotesize
+Lead DevOps. Enterprise application system migration from a bare infrastructure to kubernetes and existing process enhancement in collaboration with the development team. Containerization, Helm chart creation, workflow scheduler setup, existing CI/CD pipelines enhancement.\\
+
+\scriptsize
+\textcolor{ColorThree}{Tools :} Java Spring; Docker; Kubernetes; Helm; Gitlab CI; Python; Airflow; Golang; Shell; Git
+
+\normalsize
+\end{description}
+
+\begin{description}
+\raggedright
+
+\item[\normalfont \textcolor{ColorTwo}{09/2020 -- 08/2023}] \textbf{\textcolor{ColorOne}{Programmer Analyst}}\\
+
+\footnotesize
+Coexya -- Saint-Didier-au-Mont-d'Or -- FRANCE
+
+\small
+\textcolor{ColorTwo}{Third-party maintenance of a public transportation card management application for a large city}
+
+\footnotesize
+Fullstack Web Developer as part of a TMA transition project. Handover with the outgoing service provider, containerization, creation of CI/CD pipelines, writing technical specifications, feature implementation, and bug fixing. \\
+
+\scriptsize
+\textcolor{ColorThree}{Tools :} Angular; Dotnet; Postresql; Docker; Gitlab CI; Shell; Git\\
+
+\small
+\textcolor{ColorTwo}{R\&D on a kickstarter project}
+
+\footnotesize
+Lead Developer on a web/mobile project. Development leadership and project management responsibilities, UI/UX mockup design.\\
+
+\scriptsize
+\textcolor{ColorThree}{Tools :} Flutter; Drupal; PHP; MySQL; Docker; Shell; Git; Figma\\
+
+\small
+\textcolor{ColorTwo}{Third-party application maintenance for a carpooling platform}
+
+\footnotesize
+Frontend Developer for a mobile web platform. Bug analysis, technical specification writing, client communication, and management of app store releases.\\
+
+\scriptsize
+\textcolor{ColorThree}{Tools :} VueJS; Cordova; Git; Android and Apple stores\\
+
+\small
+\textcolor{ColorTwo}{Development of a fleet management application}
+
+\footnotesize
+Frontend Web Developer within an agile team. Active participation in agile ceremonies, requirements scoping, and specification writing.\\
+
+\scriptsize
+\textcolor{ColorThree}{Tools :} Flutter; Dotnet Core; Postgresql; Git\\
+
+\normalsize
+\end{description}
+
+\begin{description}
+\raggedright
+\item[\normalfont \textcolor{ColorTwo}{07/2022 -- 08/2022}] 
+\textbf{\textcolor{ColorOne}{R\&D Intern}}\\ 
+
+\footnotesize
+Universidad de Los Andes -- Bogota -- COLOMBIA
+
+\footnotesize
+Web Developer. R\&D project aimed at creating a global inventory system for university laboratories, with significant network constraints and hardware tools.\\
+
+\scriptsize
+\textcolor{ColorThree}{Tools :} Docker; Kubernetes; Python Django; VueJS; Postgresql; Redis; RabbitMQ; Shell; Git; LoRaWAN; electronics
+
+\normalsize
+\end{description}
+
+%----------------------------------------------------
+
+\begin{multicols}{3}[
+\section*{Hard skills}
+]
+\raggedright
+
+\footnotesize
+\begin{description}
+\item Java / Spring \SkillBull{$\bullet \bullet \circ \, \circ$}
+\item JS/TS \SkillBull{$\bullet \bullet \circ \, \circ$}
+\item VueJS \SkillBull{$\bullet \circ \circ \, \circ$}
+
+\columnbreak
+
+\item Golang \SkillBull{$\bullet \bullet \bullet \, \circ$}
+\item Python \SkillBull{$\bullet \bullet \circ \, \circ$}
+\item Scripting Shell \SkillBull{$\bullet \bullet \circ \, \circ$}
+\end{description}
+
+\columnbreak
+
+\begin{description}
+\item Gitlab CI \SkillBull{$\bullet \bullet \bullet \, \bullet$}
+\item Docker \SkillBull{$\bullet \bullet \bullet \, \circ$}
+\item Helm \SkillBull{$\bullet \bullet \circ \, \circ$}
+\end{description}
+
+\end{multicols}
+\normalsize
+
+\end{minipage}
+\end{adjustbox}
+\end{document}
